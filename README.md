@@ -49,11 +49,11 @@ using the Builder design pattern, which we'll be discussing in lecture soon.
 Open up `app.Main` and read it as a team.
 - What are the Views and what are the current Use Cases?
 - Which Uses Cases are triggered from each View?
-- Which version of the DAO is `app.Main` using?
+- Which version of the DAO is `app.Main` using? -- InMemoryUserDAO
 
 The major change since Phase 1 is that we have added the `app.AppBuilder` class which makes
 it easier to understand how our CA engine is being constructed — it also makes `app.Main` nice and concise!
-- Why do all those `addX` methods end in `return this;`? 
+- Why do all those `addX` methods end in `return this;`? -- kind of like madifying a mutable object? one part at a time
 
 Run the program and make sure the signup and login Use Cases work.
 
@@ -96,21 +96,21 @@ The TODOs are summarized below (by file) to help your team decide how to split t
 
 - `Main.java`
 
-  - [ ] TODO: add the Logout Use Case to the app using the appBuilder
+  - [ x] TODO: add the Logout Use Case to the app using the appBuilder
 
 * * *
 
 - `LoggedInView.java` (tip: refer to the other views for similar code)
 
-  - [ ] TODO: save the logout controller in the instance variable.
-  - [ ] TODO: execute the logout use case through the Controller
+  - [x ] TODO: save the logout controller in the instance variable.
+  - [x ] TODO: execute the logout use case through the Controller
 
 * * *
 
 - `LogoutController.java` (tip: refer to the other controllers for similar code)
 
-  - [ ] TODO: Save the interactor in the instance variable.
-  - [ ] TODO: run the use case interactor for the logout use case
+  - [ x] TODO: Save the interactor in the instance variable.
+  - [x ] TODO: run the use case interactor for the logout use case
 
 * * *
 
@@ -127,7 +127,7 @@ The TODOs are summarized below (by file) to help your team decide how to split t
 
 - `LogoutOutputData.java`
 
-  - [ ] TODO: save the parameters in the instance variables.
+  - [x ] TODO: save the parameters in the instance variables.
 
 * * *
 
